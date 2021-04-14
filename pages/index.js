@@ -5,19 +5,20 @@ import {
   SearchIcon,
   ViewGridIcon,
 } from '@heroicons/react/solid'
+import { Footer } from '../components/Footer'
 export default function Home() {
   const handleClick = (event) => {
     event.preventDefault()
   }
   return (
-    <div className='flex flex-col min-h-screen px-3.5 w-full'>
+    <div className='flex flex-col h-screen'>
       <Head>
         <title>Google</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
       {/* HEADER */}
-      <header className='flex justify-between items-center py-2 space-x-2'>
+      <header className='flex justify-between items-center px-3.5 py-2 space-x-2'>
         <img src='/images/logo.svg' className='w-8 h-8' />
         <div className='flex items-center space-x-6'>
           <ul className='flex space-x-4 text-gray-600'>
@@ -29,7 +30,7 @@ export default function Home() {
         </div>
       </header>
       {/* MAIN */}
-      <main className='flex justify-center items-center flex-grow'>
+      <main className='flex justify-center items-center flex-grow px-3.5'>
         <form className='flex items-center flex-col w-full'>
           <img src='/images/search.svg' className='h-20 mb-4' />
           <div className='flex items-center w-full px-5 py-3 mb-4 rounded-full max-w-md border border-gray-200 focus-within:shadow-input hover:shadow-input'>
@@ -47,8 +48,7 @@ export default function Home() {
           </div>
         </form>
       </main>
-      {/* FOOTER */}
-      <footer></footer>
+      <Footer />
     </div>
   )
 }
