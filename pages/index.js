@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import { Header } from '../components/Header'
-import { Main } from '../components/Main'
-import { Footer } from '../components/Footer'
+import { Header } from '../components/main-page/Header'
+import { Main } from '../components/main-page/Main'
+import { Footer } from '../components/main-page/Footer'
 export default function Home() {
   return (
     <div className='flex flex-col h-screen'>

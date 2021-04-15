@@ -1,6 +1,6 @@
 import React from 'react'
 import { ViewGridAddIcon } from '@heroicons/react/solid'
-import {Avatar} from '../components/Avatar'
+import { Avatar } from '../Avatar'
 
 export const Header = () => {
   return (

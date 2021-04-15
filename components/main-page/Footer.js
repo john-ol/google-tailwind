@@ -14,14 +14,14 @@ export const Footer = () => {
           <p>Practice with Tailwind css</p>
         </div>
         <div className='flex justify-center whitespace-nowrap items-center space-x-4 sm:justify-self-start'>
-          <p>Advertising</p>
-          <p>Buisness</p>
-          <p>How search works</p>
+          <p className='link'>Advertising</p>
+          <p className='link'>Buisness</p>
+          <p className='link'>How search works</p>
         </div>
         <div className='flex justify-center items-center space-x-4 sm:ml-auto'>
-          <p>Terms</p>
-          <p>Privacy</p>
-          <p>Settings</p>
+          <p className='link'>Terms</p>
+          <p className='link'>Privacy</p>
+          <p className='link'>Settings</p>
         </div>
       </div>
     </footer>
