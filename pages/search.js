@@ -19,8 +19,9 @@ export default function Search({ results }) {
 export async function getServerSideProps(context) {
   const API_KEY = process.env.API_KEY
   const CONTEXT_KEY = process.env.CONTEXT_KEY
+  const startIndex = context.query.start || '0'
   const data = await fetch(
-    `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${context.query.data}`
+    `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${context.query.data}&start=${startIndex}`
   ).then((response) => response.json())
   return {
     props: {

@@ -1,16 +1,16 @@
 import React from 'react'
+import { Pagination } from '../pagination'
 
 export const SearchResults = ({ results }) => {
   const { searchInformation, items } = results
-  console.log(items)
   return (
     <div className='mt-3 max-w-4xl md:pl-36'>
       <p className='text-sm text-gray-600'>
         About {searchInformation?.formattedTotalResults} results (
         {searchInformation?.formattedSearchTime} seconds)
       </p>
-      <ul className='py-6 space-y-8 md:space-y-6'>
-        {items.map((item) => (
+      <ul className='break-words py-6 space-y-8 md:space-y-6'>
+        {items?.map((item) => (
           <li key={item.link}>
             <div className='group'>
               <a href={item.link} className='text-sm'>
@@ -28,6 +28,7 @@ export const SearchResults = ({ results }) => {
           </li>
         ))}
       </ul>
+      <Pagination />
     </div>
   )
 }
