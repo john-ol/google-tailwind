@@ -1,5 +1,4 @@
 import React from 'react'
-import { Pagination } from '../pagination'
 
 export const SearchResults = ({ results }) => {
   const { searchInformation, items } = results
@@ -28,7 +27,6 @@ export const SearchResults = ({ results }) => {
           </li>
         ))}
       </ul>
-      <Pagination />
     </div>
   )
 }

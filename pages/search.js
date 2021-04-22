@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import { HeaderSearch } from '../components/search-page/Header/Header'
 import { SearchResults } from '../components/search-page/SearchResults'
+import { Pagination } from './../components/Pagination'
 export default function Search({ results }) {
   return (
     <div className='px-3.5'>
@@ -13,6 +14,7 @@ export default function Search({ results }) {
       <HeaderSearch />
       {/* Main */}
       <SearchResults results={results} />
+      <Pagination />
     </div>
   )
 }
