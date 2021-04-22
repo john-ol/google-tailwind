@@ -1,20 +1,24 @@
 import React from 'react'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import { HeaderSearch } from '../components/search-page/Header/Header'
 import { SearchResults } from '../components/search-page/SearchResults'
 import { Pagination } from './../components/Pagination'
 export default function Search({ results }) {
+  const router = useRouter()
+  const totalResults = +results.searchInformation.totalResults
+  const searchQuery = router.query.data
   return (
     <div className='px-3.5'>
       <Head>
-        <title>Google Search</title>
+        <title>Google Search - {searchQuery}</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       {/* Header */}
-      <HeaderSearch />
+      <HeaderSearch searchQuery={searchQuery} />
       {/* Main */}
       <SearchResults results={results} />
-      <Pagination />
+      {totalResults !== 0 && <Pagination />}
     </div>
   )
 }

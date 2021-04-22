@@ -11,8 +11,8 @@ import { Input } from '../../Input'
 import { Avatar } from '../../Avatar'
 import { HeaderOptions } from './HeaderOptions'
 
-export const HeaderSearch = () => {
-  const [inputData, setInputData] = useState('')
+export const HeaderSearch = ({ searchQuery }) => {
+  const [inputData, setInputData] = useState(searchQuery)
   const router = useRouter()
   const submitHandler = (event) => {
     event.preventDefault()
