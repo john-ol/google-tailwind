@@ -8,9 +8,9 @@ This application is a clone of the Google homepage providing search functionalit
 ## 
 **Front-end:**
 
-| ![Next.js](https://www.oleinikov.dev/project-icons/next-js.svg) | ![Tailwind CSS](https://www.oleinikov.dev/project-icons/tailwind-css.svg) |
-|:--:|:--:|
-| Next.js | Tailwind CSS |
+[![next.js](https://www.oleinikov.dev/readme/next-js.svg "next-js")](https://www.oleinikov.dev/readme/next-js.svg "next.js")
+[![tailwind css](https://www.oleinikov.dev/readme/tailwind-css.svg "tailwind css")](https://www.oleinikov.dev/readme/tailwind-css.svg "tailwind css")
 
+## 
 **Images:**
 [![Google-clone](https://www.oleinikov.dev/static/5caeecd5bfacfeb6e35d2a411a297336/99d89/google-clone-featured.webp "Google-clone")](https://www.oleinikov.dev/static/5caeecd5bfacfeb6e35d2a411a297336/99d89/google-clone-featured.webp "Google-clone")
